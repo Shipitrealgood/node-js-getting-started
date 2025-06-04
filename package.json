@@ -1,30 +1,18 @@
 {
-  "name": "node-js-getting-started",
-  "private": true,
-  "description": "A sample Node.js app using Express",
-  "engines": {
-    "node": "18.x || 20.x || 22.x"
-  },
-  "main": "index.js",
+  "name": "immediateknowledge",
+  "version": "1.0.0",
+  "description": "Zoom to Salesforce Knowledge Articles",
+  "main": "server.js",
   "scripts": {
-    "start": "node index.js",
-    "test": "jest"
+    "start": "node server.js"
   },
   "dependencies": {
-    "ejs": "^3.1.10",
-    "express": "^5.1.0"
+    "express": "^4.17.1",
+    "axios": "^0.21.1",
+    "pg": "^8.7.3",
+    "node-cron": "^3.0.2"
   },
-  "devDependencies": {
-    "jest": "^29.7.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/heroku/node-js-getting-started"
-  },
-  "keywords": [
-    "node",
-    "heroku",
-    "express"
-  ],
-  "license": "MIT"
+  "engines": {
+    "node": "14.x"
+  }
 }
