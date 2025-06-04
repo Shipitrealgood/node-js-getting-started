@@ -5,6 +5,9 @@ const port = process.env.PORT || 5006
 
 const app = express()
 
+// --- Health probe ---
+app.get('/health', (req, res) => res.send('OK'));
+
 app.use(express.static(path.join(__dirname, 'public')))
 app.set('views', path.join(__dirname, 'views'))
 app.set('view engine', 'ejs')
